@@ -1,10 +1,8 @@
 import React from 'react'
 
-function Dashboard() {
+const Dashboard = () => {
   return (
-    <div>
-      dashboarddcskkplc
-    </div>
+    <div>Dashboard</div>
   )
 }
 
