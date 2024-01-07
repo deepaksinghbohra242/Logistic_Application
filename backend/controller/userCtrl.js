@@ -26,18 +26,22 @@ const userRegisterCtrl = expressAsyncHandler(async (req, res) => {
 const userLoginCtrl = expressAsyncHandler(async (req, res) => {
     const { email, password } = req.body;
     const userFound = await User.findOne({ email });
-    if (userFound && (await userFound.isPasswordMatched(password))) {
-        const token = generateToken(userFound?.id)
-        res.cookie('token', token).json({
-            id: userFound?._id,
-            name: userFound?.name,
-            email: userFound?.email,
-            token
-        });
-    }
-    else {
-        res.status(401);
-        throw new Error('Invalid Login Crediential');
+    try {
+        if (userFound && (await userFound.isPasswordMatched(password))) {
+            const token = generateToken(userFound?.id)
+            res.cookie('token', token).json({
+                id: userFound?._id,
+                name: userFound?.name,
+                email: userFound?.email,
+                token
+            });
+        }
+        else {
+            res.status(401);
+            throw new Error('Invalid Login Crediential');
+        }
+    } catch (error) {
+        res.json(error);
     }
 })
 
