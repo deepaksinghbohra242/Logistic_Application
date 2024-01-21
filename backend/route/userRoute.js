@@ -5,7 +5,6 @@ const {
     fetchUserProfile,
     logout
 } = require('../controller/userCtrl');
-const fetchUserFromToken = require('../middleware/fetchUserFromToken')
 
  
 const userRoutes = express.Router(); 
