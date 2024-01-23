@@ -1,0 +1,20 @@
+.booking{
+   margin-top: 3rem;
+   margin-left: 8rem;
+   gap: 5rem;
+}
+
+.seaching{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+}
+.input{
+    width: 25rem;
+}
+
+.labell{
+    margin-right: 8px;
+    font-size: x-large;
+    font-weight: 700;
+}

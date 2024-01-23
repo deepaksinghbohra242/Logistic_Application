@@ -1,0 +1,100 @@
+.Driver{
+    margin:2rem;
+    font-size: xx-large;
+    text-align: center;
+}
+.main{
+    margin: 2.0rem;
+    border: 2px solid black;
+}
+
+
+.name{
+    padding: 2.5rem;
+
+}
+
+.mail{
+    padding: 0 2.5rem;
+    margin-top: 4px;
+}
+
+.Gender{
+    padding: 0 2.5rem;
+    font-size: large;
+    font-weight: 500;
+    margin-bottom:4px;
+
+}
+
+.radio{
+    padding: 0 2.5rem;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+.document{
+    margin:1.35rem 2.5rem;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.license{
+    margin: 1.5rem 2.5rem;
+}
+
+.Addhar{
+    margin: 1.5rem 2.5rem;
+}
+
+.doc{
+    margin: 1.5rem 2.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.dob{
+    margin: 0.5rem 2.5rem;
+    margin-bottom: 2rem;
+    width: 15rem;
+}
+
+.buttn{
+    margin-top: 1.5rem;
+    margin-left: 45rem;
+    margin-bottom: 35px;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    
+}
+
+.buttn:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Active styles */
+  .buttn:active {
+    border-color: #2980b9;
+  }
+  
+  /* Disabled styles */
+  .buttn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .dp{
+  margin-bottom: 28px;
+  margin-top: -10px;
+
+
+  }
