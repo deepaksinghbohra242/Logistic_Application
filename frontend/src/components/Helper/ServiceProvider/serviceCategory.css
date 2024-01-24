@@ -1,0 +1,51 @@
+.cardd{
+    margin:40px ;
+}
+
+
+.service{
+    margin: 30px;
+    font-size: xx-large;
+}
+
+.firstSection{
+    display: flex;
+    padding: 14px;
+}
+ 
+.input-section{
+margin: 18px;
+
+}
+
+label{
+    font-size: larger;
+    font-weight: 500;
+}
+
+.input{
+    border: 2px solid black;
+    padding: 3px;
+    padding-left: 8px;
+    border-radius: 8px;
+    margin-left: 4px;
+}
+
+.dropdown{
+    margin-top: 14px;
+    margin-left: 18px;
+}
+
+.btn{
+    width: 150px;
+    color: blue;
+
+}
+.btn-group{
+    background-color: greenyellow;
+}
+
+.name_cat{
+    margin-right: 8px;
+    font-size: larger;
+}
