@@ -18,24 +18,28 @@
 
 
 .sidebar{
-width: 345px ;   
+width: 310px ;   
 position: fixed;
 left: 0;
 top: 0;
-height: 100%;
+height:125%;
 background:var(--main-color);
 z-index: 100;
 transition: width 300ms;
+/* overflow:hidden; */
+position: absolute;
 }
 
 
 .sidebar-brand{
+  visibility: hidden;
   height: 90px;
   padding-left:1rem 0rem 1rem 2rem;
 color: #fff;
+
 }
 
- .sidebar-brand span{
+.sidebar-brand span{
 display: inline-block;
 padding-right: 1rem;
 padding-left: 2rem;
@@ -169,7 +173,7 @@ overflow-x: hidden;
 }
 
 main{
-  margin-top: 85px;
+  margin-top: 40px;
 padding:3rem 1.5rem  ;
 background: #f1f5f9;
 min-height: calc(100vh - 90px);
@@ -258,7 +262,7 @@ border: 1px solid var(--main-color);
  }
 
  td{
- padding: .5rem 1rem;
+ padding: .7rem 1rem;
 font-size: .9rem;
 color: #222
  }
@@ -282,7 +286,7 @@ border-radius: 50%;
  }
 
 .status.pink{
-  
+  /* margin-left: 24px; */
 background:deeppink;
  }
  .status.orange{
@@ -291,7 +295,7 @@ background: orangered;
 
  }
  
-  .table-repnsive{
+  .table-responsive{
     width: 100%;
     overflow-x: auto;
   }

@@ -34,10 +34,10 @@ function Navbar() {
             </NavLink>
           </div>
           <div>
-            <NavLink to={"/service"} className="flex items-center  text-white transition duration-400 ease-in-out">
+            <NavLink to={"/products"} className="flex items-center  text-white transition duration-400 ease-in-out">
               <span className="mr-1 ">
               </span>
-              <span className= "hover:text-xl text-white hover:mt-2 mt-1" style={{transition: "all 0.1s ease-in 0.1s"}}>CarGo</span>
+              <span className= "hover:text-xl text-white hover:mt-2 mt-1" style={{transition: "all 0.1s ease-in 0.1s"}}>Products</span>
             </NavLink>
           </div>
           {/* <div>
