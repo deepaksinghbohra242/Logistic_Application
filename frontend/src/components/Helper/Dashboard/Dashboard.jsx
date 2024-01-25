@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Dashboard.css";
 import {Link} from 'react-router-dom'
+import { UserContext } from "../../../ContextLayout";
 
 const Dashboard = () => {
+  const {user} = useContext(UserContext);
   return (
     <>
       <input type="checkbox" id="nav-toggle" />
@@ -84,10 +86,11 @@ const Dashboard = () => {
         <header className="-mt-10">
           <h2>
             <label htmlFor="nav-toggle">
-              <span className="las la-bars"></span>
+              <span className="las la-bars">{user?.data?.userName}</span>
             </label>
           </h2>
           <div className="flex flex-row">
+            
             <div>
               <label htmlFor="" className="p-2">
                 Order Tracking
