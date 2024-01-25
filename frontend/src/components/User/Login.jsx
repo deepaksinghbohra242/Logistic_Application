@@ -24,7 +24,7 @@ function Login() {
         email : credential.email ,
         password : credential.password
       });
-      setUser(data);
+      setUser(data);  
       setRedirect(true);
       swal({
         title:"Login Successfully!",
