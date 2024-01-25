@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  
+}
+
+.about-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+  font-size: x-large;
+}
+
+h2 {
+  color: #555;
+  font-size: x-large;
+  margin-top: 25px;
+}
+
+p {
+  color: #777;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: x-large;
+}
