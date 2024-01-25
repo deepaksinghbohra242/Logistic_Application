@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dashboard.css";
+import {Link} from 'react-router-dom'
 
 const Dashboard = () => {
   return (
@@ -22,34 +23,34 @@ const Dashboard = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <Link to={'/'}>
                 <span className="las la-users"></span>
                 <span>Service Monitoring</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to = {'/dashboard/servicecategory'}>
                 <span className="las la-users"></span>
                 <span>Service Category</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to={'/dashboard/driverregistration'}>
                 <span className="las la-clipboard-list"></span>
                 <span>Driver Registration</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to={'/dashboard/OrderList'}>
                 <span className="las la-shopping-bag"></span>
                 <span>Orders</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to={'/dashboard/myorders'}>
                 <span className="las la-shopping-bag"></span>
                 <span>My Orders</span>
-              </a>
+              </Link>
             </li>
             <li>
               <a href="" className="active">
@@ -58,22 +59,22 @@ const Dashboard = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <Link to={'/dashboard/bookingTruck'}>
                 <span className="las la-user-circle "></span>
                 <span>Truck Booking</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to={'/dashboard/productdetails'}>
                 <span className="las la-clipboard-list"></span>
                 <span>Product Details</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
+              <Link to= {'/dashboard/customercart'}>
                 <span className="las la-user-circle "></span>
                 <span>Orders</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
