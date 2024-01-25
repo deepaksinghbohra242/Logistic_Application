@@ -1,6 +1,11 @@
 import React from 'react'
 import "./serviceCategory.css"
-
+import truck6 from '../../../assets/image/truck6.png'
+import truck from '../../../assets/image/truck.png'
+import lorri from '../../../assets/image/lorri.png'
+import khachar from '../../../assets/image/khachar.jpeg'
+import smalltruck from '../../../assets/image/smalltruck.jpeg'
+import bigtruck from '../../../assets/image/bigtruck.jpeg'
 
 const Service_category = () => {
   return (
@@ -9,7 +14,7 @@ const Service_category = () => {
       <h1 className='service'>Service Category</h1>
     </div>
     <hr />
-    <div className='firstSection'>
+    <div className='firstSection '>
       <div className='input-section'>
         <label htmlFor="">Search</label>
         <input type="text" placeholder='search' className='input'/>
@@ -37,7 +42,7 @@ const Service_category = () => {
 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
   <div className="col">
     <div className="card shadow-sm">
-      <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+      <img src={truck6} className='h-56 w-full' />
       <div className="card-body">
         <div className="d-flex justify-content-between align-items-center">
           <div className="btn-group">
@@ -52,7 +57,7 @@ const Service_category = () => {
   </div>
   <div className="col">
   <div className="card shadow-sm">
-      <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+      <img src={truck} className='h-56 w-3/4 ml-8' />
       <div className="card-body">
         <div className="d-flex justify-content-between align-items-center">
           <div className="btn-group">
@@ -67,7 +72,7 @@ const Service_category = () => {
   </div>
   <div className="col">
   <div className="card shadow-sm">
-      <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  <img src={lorri} className='h-56 w-11/12 ml-3' />
       <div className="card-body">
         <div className="d-flex justify-content-between align-items-center">
           <div className="btn-group">
@@ -82,8 +87,8 @@ const Service_category = () => {
   </div>
 
   <div className="col">
-  <div className="card shadow-sm">
-      <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  <div className="card shadow-sm col mb-20">
+  <img src={smalltruck} className='h-56 w-full' />
       <div className="card-body">
         <div className="d-flex justify-content-between align-items-center">
           <div className="btn-group">
@@ -98,7 +103,7 @@ const Service_category = () => {
   </div>
   <div className="col">
   <div className="card shadow-sm">
-      <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  <img src={bigtruck} className='h-56 w-full' />
       <div className="card-body">
         <div className="d-flex justify-content-between align-items-center">
           <div className="btn-group">
@@ -111,15 +116,15 @@ const Service_category = () => {
       </div>
     </div>
   </div>
-  <div className="card shadow-sm">
-      <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  <div className="card shadow-sm col mb-20">
+  <img src={khachar} className='h-56 w-10/12 ml-3' />
       <div className="card-body">
         <div className="d-flex justify-content-between align-items-center">
           <div className="btn-group">
             <button type="button" className="btn btn-lg btn-outline-secondary">Add</button>
           </div>
           <div className='name_cat'>
-            <span>Truck</span>
+            <span>mules</span>
           </div>
         </div>
       </div>
