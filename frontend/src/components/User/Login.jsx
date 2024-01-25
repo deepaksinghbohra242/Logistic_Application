@@ -24,6 +24,7 @@ function Login() {
         email : credential.email ,
         password : credential.password
       });
+      console.log(data); 
       setUser(data);
       setRedirect(true);
       swal({

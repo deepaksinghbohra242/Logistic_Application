@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import "../../App.css"
+import { UserContext } from "../../ContextLayout";
 
 function Navbar() {
+  const {user} = useContext(UserContext);
   return (
     <nav className="bg-gradient-to-r from-violet-500 to-purple-950 p-4 h-24" >
       <div className="container mx-auto flex  justify-between  items-center text-xl  mt-3 " style={{transition: "all 1s ease-in-out"}}>
@@ -61,6 +63,7 @@ function Navbar() {
               <span>Menu</span>
             </NavLink>
           </div> */}
+          {!user && (
           <div className="flex gap-2 ">
             <div className="">
               <NavLink to={"/login"} className="flex  items-center  text-white transition duration-400 ease-in-out">
@@ -79,7 +82,7 @@ function Navbar() {
               </NavLink>
             </div>
 
-          </div>
+          </div>)}
         </div>
       </div>
     </nav>
